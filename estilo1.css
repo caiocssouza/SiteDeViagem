@@ -147,8 +147,25 @@ h2{
     background-color: rgb(255, 0, 0);
     color: white;
 }
+
+
+
 .card-title{
     color: black;
     border: none;
+
     
+}
+.card-img-top{
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.card-img-top:hover{
+    transition: 0.3s;
+    transform: scale(0.95);
+
+}
+.card.body:hover{
+text-shadow: #DCDCDC;
 }
