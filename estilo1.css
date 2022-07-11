@@ -167,5 +167,13 @@ h2{
 
 }
 .card.body:hover{
-text-shadow: #DCDCDC;
+text-shadow: #ffffff;
+}
+
+.accordion-button{
+    background-color:#f8db1c;
+}
+.accordion-button collapsed{
+    background-color: aqua;
+
 }
