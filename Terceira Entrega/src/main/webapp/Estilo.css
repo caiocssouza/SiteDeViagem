@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    width: 100wh;
+}
+body{
+    background-color: white
+    
+}
+
+ 
+.barra{
+    background-color: #f8db1c; 
+    width: 100%; 
+    height: 60px;
+    
+}
+
+p{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    margin-left: 20px;
+    padding: 5px;
+}
+.navbar{
+    background-color: #ffffff;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand{
+    width: 60px; height: 60px;
+    padding: 10px;
+    
+}
+.nav-item:hover{
+background-color: red;
+}
+
+li{
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.nav-link:hover{
+    color: white;
+}
+.carousel{
+    height: 120px;
+}
+h2{
+    padding: 15px;   
+}
+
+.quebra{
+    width: 100%;
+    background-color: #ffffff;
+    justify-content: flex-start;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    background-color:#f8db1c;
+    width: 90%;
+    justify-items: flex-end;
+    margin: 0;
+    padding: 0;    
+    border-radius: 100px;
+}
+.alerta{
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.alerta p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;  
+    font-style: oblique;
+}
+
+.carousel-inner{
+    background-color: #FAFAD2;
+    background-size: cover;
+    
+}
+.barra2{
+    width: 100%;
+    height: 5px;
+    background-color: red;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 450px;
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.footer a{
+    color:black;
+    text-decoration: none;  
+}
+
+.footer a:hover{
+    color:darkgrey;   
+}
+.card-body a{
+    text-decoration: none;
+    color: darkgrey;
+    padding: 8px;
+}
+.card-body a:hover{
+    color: white;
+    background-color: red;
+}
+
+.list-group-item1{
+    background-color: #FF634760;
+    list-style-type: none;
+    padding: 5px;
+}
+.logo-sobre{
+    justify-content: center;
+    text-align: center;
+}
+
+.btnseguro{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    color:gray;
+}
+.btnseguro:hover{
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+
+
+.card-title{
+    color: black;
+    border: none;
+
+    
+}
+.card-img-top{
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.card-img-top:hover{
+    transition: 0.3s;
+    transform: scale(0.95);
+
+}
+.card.body:hover{
+text-shadow: #ffffff;
+}
+
+.accordion-button{
+    background-color:#f8db1c;
+}
+.accordion-button collapsed{
+    background-color: aqua;
+
+}
+.margem{
+    background-color: lightyellow;
+    
+}
