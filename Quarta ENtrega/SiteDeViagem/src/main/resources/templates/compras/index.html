@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+	</head>
+	
+		<body>
+		
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<h1>Compras</h1>
+		
+		<table class="table">
+  <thead class="table-dark">
+    <tr >
+      <th scope="col">ID#</th>
+      <th scope="col" >NOME</th>
+      <th scope="col" >PREÇO</th>
+      <th scope="col" >DESTINO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="compra : ${compras}">
+      <th th:text="${compra.id}">1</th>
+      <td th:text="${compra.nome}">Mark</td>
+      <td th:text="${compra.preco}">5000</td>
+      <td th:text="${compra.data}">1111</td>
+    </tr>
+  </tbody>
+</table>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<button type="submit">FINALIZAR</button>
+		</body>
+</html>
