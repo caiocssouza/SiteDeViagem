@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<title>Listagem de Passagens</title>
+</head>
+
+<body>
+<header th:fragment="head">
+ 		<div class="container mt-3">
+ 		<ul class="nav nav-tabs">
+ 			<li class="nav-item">
+ 				<a aria-current="page" class="nav-link active" href="/">Home</a>
+ 			</li>
+ 			<li class="nav-item">
+ 				<a class="nav-link" href="/cliente">Cliente</a>
+ 			</li>
+ 			<li class="nav-item">
+ 				<a class="nav-link" href="/destino">Destino</a>
+ 			</li>
+ 			<li class="nav-item">
+ 				<a class="nav-link" href="/passagem">Passagem</a>
+ 			</li>
+ 		</ul> 
+ 	</header>
+	<nav class="navbar navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/">Passagens</a>
+		</div>
+	</nav>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Minhas Passagens</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Data de ida</th>
+							<th scope="col">Data de retorno</th>
+							<th scope="col">Preço</th>
+						
+						
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="passagem : ${passagem}">
+							<th scope="row" th:text="${destino.id}"></th>
+							<td>
+								<span th:text="${passagem.dataIda}"></span>
+							</td>
+							<td>
+							 <span th:text="${passagem.dataVolta}"></span>
+							 </td>
+							 <td>
+							 <span th:text="${passagem.preco}"></span>
+							 </td>
+							<td>
+								<a th:href="@{/passagem/{id}/editar (id=${passagem.id})}" class="btn btn-warning">
+									Editar
+								</a>
+								<a th:href="@{/passagem/{id}/excluir (id=${passagem.id})}" class="btn btn-danger"
+									onclick="confirm('Tem certeza que deseja excluir esta passagem?');">
+									Excluir
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="row">
+            <div class="col-sm-12">
+                <a th:href="@{/passagem/cadastrar}" class="btn btn-primary">Cadastrar novo Destino</a>
+            </div>
+        </div>
+
+		
+</body>
+
+</html>
